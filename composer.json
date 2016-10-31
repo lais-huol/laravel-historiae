@@ -18,7 +18,7 @@
     "illuminate/http": "~5.3",
     "illuminate/support": "~5.3",
     "jenssegers/agent": "~2.3",
-    "ext-intl": "*",
+    "ext-intl": "*"
   },
   "autoload": {
     "psr-4": {
