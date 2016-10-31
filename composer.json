@@ -1,0 +1,29 @@
+{
+  "name": "lais/historiae",
+  "version": "1.0",
+  "description": "Historiae provides history logging support to Laravel.",
+  "keywords": ["laravel", "historiae"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Guilherme Portela",
+      "email": "guilhermeportela@gmx.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/container": "~5.3",
+    "illuminate/contracts": "~5.3",
+    "illuminate/database": "~5.3",
+    "illuminate/http": "~5.3",
+    "illuminate/support": "~5.3",
+    "jenssegers/agent": "~2.3",
+    "ext-intl": "*",
+  },
+  "autoload": {
+    "psr-4": {
+      "Historiae\\": "src/"
+    }
+  },
+  "prefer-stable": true
+}

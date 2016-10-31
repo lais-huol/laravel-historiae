@@ -1,0 +1,12 @@
+### Laravel ###
+vendor/
+node_modules/
+bootstrap/cache/
+public/storage
+.env.*.php
+.env.php
+.env
+
+### Composer ###
+composer.phar
+/vendor/
