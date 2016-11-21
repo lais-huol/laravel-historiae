@@ -1,6 +1,5 @@
 {
     "name": "lais/historiae",
-    "version": "1.0",
     "description": "Historiae provides history logging support to Laravel.",
     "keywords": ["laravel", "historiae"],
     "license": "MIT",
