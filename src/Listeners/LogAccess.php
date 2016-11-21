@@ -7,6 +7,13 @@ use Illuminate\Support\Facades\Auth;
 
 class LogAccess
 {
+    /**
+     * Handle the event.
+     *
+     * @param   \Illuminate\Http\Request  $request
+     * @param   \Illuminate\Http\Response $response
+     * @return  void
+     */
     public function handle($request, $response)
     {
         AccessLog::create([

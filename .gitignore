@@ -1,12 +1,5 @@
-### Laravel ###
-vendor/
-node_modules/
-bootstrap/cache/
-public/storage
-.env.*.php
-.env.php
-.env
-
-### Composer ###
+/vendor
 composer.phar
-/vendor/
+composer.lock
+.DS_Store
+Thumbs.db

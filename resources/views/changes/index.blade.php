@@ -30,7 +30,7 @@
                         <label for="created">{{ trans('historiae::general.range.end')  }}</label>
                         <input type="text" class="form-control" name="filters[end_at]"  value="{{ request('filters.end_at') }}">
                     </div>
-                    <button type="submit" class="btn btn-default">Filtrar</button>
+                    <button type="submit" class="btn btn-default">{{ trans('historiae::general.filter') }}</button>
                 </form>
             </div>
             @if($changes->count())
