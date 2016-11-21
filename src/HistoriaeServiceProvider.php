@@ -6,13 +6,12 @@ use Historiae\Observers\ChangesObserver;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 
-
 class HistoriaeServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      *
-     * @return void
+     * @return  void
      */
     public function boot()
     {
@@ -36,7 +35,7 @@ class HistoriaeServiceProvider extends ServiceProvider
             ]);
         }
 
-        foreach ($this->getConfig('models') as $model) {
+        foreach (($this->getConfig('models') ?? []) as $model) {
             $model::observe(ChangesObserver::class);
         }
 
@@ -49,6 +48,12 @@ class HistoriaeServiceProvider extends ServiceProvider
         }
     }
 
+    /**
+     * Bootstrap the application services.
+     *
+     * @param   string  $name
+     * @return  string|null
+     */
     public function getConfig($name)
     {
         return $this->app['config']["historiae.{$name}"];
@@ -57,7 +62,7 @@ class HistoriaeServiceProvider extends ServiceProvider
     /**
      * Register the service provider.
      *
-     * @return void
+     * @return  void
      */
     public function register()
     {

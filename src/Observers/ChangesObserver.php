@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\Auth;
 
 class ChangesObserver
 {
+    /**
+     * Listen to the Model saving event.
+     *
+     * @param   Model   $object
+     * @return  void
+     */
     public function saving(Model $object)
     {
         ChangeLog::create([

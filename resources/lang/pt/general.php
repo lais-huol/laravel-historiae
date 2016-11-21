@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'filter' => 'Filtrar',
     'all' => 'Todos',
     'user' => 'Usuário',
     'time' => 'Horário',

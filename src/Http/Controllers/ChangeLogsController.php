@@ -15,14 +15,24 @@ class ChangeLogsController extends Controller
      */
     protected $response;
 
+    /**
+     * Instantiate a new controller instance.
+     *
+     * @return  void
+     */
     public function __construct(ResponseFactory $response)
     {
         $this->response = $response;
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return  \Illuminate\Http\Response
+     */
     public function index()
     {
-        $changes = ChangeLog::with('user')->orderBy('created_at', 'desc');
+        $changes = ChangeLog::with('user', 'loggable')->orderBy('created_at', 'desc');
 
         if (request()->has('filters')) {
             $filters = collect(request('filters'))->reject(function($v) { return !strlen($v); });

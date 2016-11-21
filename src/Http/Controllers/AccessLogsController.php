@@ -15,11 +15,21 @@ class AccessLogsController extends Controller
      */
     protected $response;
 
+    /**
+     * Instantiate a new controller instance.
+     *
+     * @return  void
+     */
     public function __construct(ResponseFactory $response)
     {
         $this->response = $response;
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return  \Illuminate\Http\Response
+     */
     public function index()
     {
 		$accesses = AccessLog::with('user')->orderBy('created_at', 'desc');
