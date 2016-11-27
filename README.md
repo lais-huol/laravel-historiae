@@ -1,4 +1,7 @@
 # Laravel Historiae
+<a href="https://packagist.org/packages/lais/historiae"><img src="https://poser.pugx.org/lais/historiae/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/lais/historiae"><img src="https://poser.pugx.org/lais/historiae/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/lais/historiae"><img src="https://poser.pugx.org/lais/historiae/license.svg" alt="License"></a>
 
 ## Introduction
 
