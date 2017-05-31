@@ -19,8 +19,8 @@ class LogAccess
         AccessLog::create([
             'ip' => $request->ip(),
             'url' => $request->getRequestUri(),
-            'status' => $response->status(),
-            'method' => $request->method(),
+            'status' => $response->getStatus(),
+            'method' => $request->getMethod(),
             'user_id' => Auth::id()
         ]);
     }
